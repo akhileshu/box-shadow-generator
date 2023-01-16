@@ -1,8 +1,46 @@
-.card{
-  display: inline-flex;
-  margin: 20px;
- 
-}
-.card img{
+.output {
   height: 300px;
+  width: 300px;
+  background-color: antiquewhite;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.controls div {
+  background-color: aliceblue;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  background-color: rgb(213, 226, 238);
+  margin: 10px;
+  padding: 10px;
+}
+@media screen and (max-width: 1131px) {
+  .app {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  .output {
+    height: 600px;
+    width: 600px;
+  }
+  .controls div {
+    width: 800px;
+    padding: 30px;
+  }
+  * {
+    font-size: xx-large;
+  }
+  .controls {
+  
+    margin-bottom: 200px;
+  }
+  span {
+    margin-top: 150px;
+  }
 }
